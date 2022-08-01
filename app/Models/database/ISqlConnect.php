@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Models\Database;
 interface ISqlConnect {
     /**
      * The method is run querry when connect with database, use with statement select 

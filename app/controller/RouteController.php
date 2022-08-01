@@ -21,15 +21,11 @@ class RouteController {
         }
 
         $urlArray = explode("/", $this->_url);
-        // foreach ($urlArray as $tmp){
-        //     print $tmp;
-        // }
        
         $controller = $urlArray[0]; array_shift($urlArray);
         $id = -1;
 
         // check if details -> add id to url
-        var_dump($controller);
         if(strcmp($controller, "newsdetail") == 0){
             $id = intval($urlArray[0]); 
             array_shift($urlArray);

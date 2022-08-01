@@ -1,7 +1,7 @@
 <?php
 
-namespace App\database;
-use App\database\ISqlConnect;
+namespace App\Database;
+use App\Database\ISqlConnect;
 use App\config;
 
 class MySqlConnect implements ISqlConnect {
@@ -12,7 +12,9 @@ class MySqlConnect implements ISqlConnect {
         $this->db=mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
         
     }
-   
+   public function connect(){
+    
+   }
     // add querry statement
     public function addQuerry($query){
         $this->query = $query;
